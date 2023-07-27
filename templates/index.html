@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internship Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <title>Machine Learning Lab</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        h2,
+        h4 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: rgb(4, 9, 56);
+
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            color: rgb(4, 9, 56);
+            font-size: 20px;
+            font-style: italic;
+            text-decoration: double;
+        }
+
+        .button {
+            width: 200px;
+            margin-top: 15px;
+        }
+
+        .navbar {
+            text-align: center;
+            width: 100px;
+
+        }
+
+        .a {
+            color: rgb(254, 253, 253);
+            padding: 3px;
+            padding-left: 35px;
+            font-size: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .nav_image {
+            height: 230px;
+            width: 700px;
+            margin-left: 400px;
+        }
+
+        .navbar_a {
+            width: 1500px;
+            height: 50px;
+            background-color: rgb(184, 7, 7);
+
+        }
+
+        .col-1 {
+            width: 1500px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .col-2 {
+            width: 1500px;
+        }
+
+        .col-3 {
+            text-align: left;
+            height: 300px;
+            padding: 30px;
+        }
+
+        .col-4 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: justify;
+            margin-right: 50px;
+        }
+
+        .col-5 {
+            margin-left: 160px;
+            font-size: 30px;
+        }
+
+        .col-6 {
+            width: 1500px;
+        }
+
+        .col-7 {
+            background-image:url({{ url_for('static',filename = 'image/𝐖𝐎𝐍𝐃𝐄𝐑𝐖𝐀𝐋𝐋 ; bakugō katsuki.gif')}});
+            background-repeat: no-repeat;
+            background-size: 1000px 600px;
+            background-position-x: left;
+            margin-left: 270px;
+            width: 1500px;
+        }
+
+        .col-8 {
+            padding: 0px;
+            width: 800px;
+            height: 700px;
+            padding: 30px;
+        }
+
+        .col-9 {
+            text-align: left;
+            font-size: 20px;
+
+        }
+
+        .col-10 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            width: 600px;
+        }
+
+        .col-11 {
+            list-style-type: none;
+        }
+
+        .col-12 {
+            color: rgb(5, 4, 4);
+            margin-left: 20px;
+            width: 450px;
+            height: 30px;
+        }
+
+        .form-label {
+            margin-left: 20px;
+            color: rgb(2, 2, 2);
+        }
+
+        .form-select {
+            border-radius:6px;
+            width: 450px;
+            margin-left: 20px;
+            margin-top: 10px;
+            padding: 5px;
+            border-style: solid;
+            background-color: rgb(238, 237, 237);
+            border-color: white;
+        }
+
+        .col-foot-12 {
+            width: 1500px;
+            
+        }
+
+        .col-foot-img {
+            padding-left: 100px;
+            margin-left: 220px;
+        }
+
+
+        @media only screen and (min-width:300px) and (max-width:2000px) {
+
+            .navbar {
+                display: block;
+            }
+
+            .a {
+                display: block;
+            }
+
+            .nav_image {
+                display: block;
+            }
+
+            .navbar_a {
+                display: flex;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+
+            [class*="col-"] {
+                float: left;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <br>
+    </nav>
+    <div class="col-1">
+        <div style="margin-top:30px;">
+            <h2 style="font-size: 60px;">
+                Non Syllabus Project
+            </h2>
+            <hr>
+            <h4 style="font-size: 30px;">
+                This project based on Brain stroke prediction with all classification models
+            </h4>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2">
+
+                <table class="col-2">
+                    <tr>
+                        <th>
+                            <p style="font-size:50px;">Lets create a healthier future together</p>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="col-3">
+                                            <img src="{{ url_for('static',filename = 'image/brain.gif')}}" class="col-3">
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="col-4">
+                                            <p class="col-4">The negative impact of stroke in society
+                                                has led to concerted efforts to improve the management and diagnosis
+                                                of
+                                                stroke. With an increased synergy between technology and medical
+                                                diagnosis, caregivers create opportunities for better patient
+                                                management
+                                                by systematically mining and archiving the patients medical records.
+                                                Therefore, it is vital to study the interdependency of these risk
+                                                factors in patients health records and understand their relative
+                                                contribution to stroke prediction. This paper systematically
+                                                analyzes
+                                                the various factors in electronic health records for effective
+                                                stroke
+                                                prediction.Using various statistical techniques and principal
+                                                component
+                                                analysis, we identify the most important factors for stroke
+                                                prediction.
+                                                We conclude that age, heart disease, average glucose level, and
+                                                hypertension are the most important factors for detecting stroke in
+                                                patients.</p>
+                                        </div>
+
+                                    </th>
+                                </tr>
+                            </table>
+
+
+
+
+                            <br><br>
+
+                            <p class="col-5">
+                                You can predict your stroke chances by filling the form below with
+                                appropriate details.</b> </p>
+
+
+                            <br><br><br><br>
+                            <br><br><br><br>
+                            <hr>
+
+                        </th>
+
+                    </tr>
+
+
+                    <tr class="col-6">
+                        <th>
+
+                            <table class="col-7">
+                                <tr>
+                                    <th>
+                                        <form action="{{ url_for('predict')}} " method="get" class="col-9">
+
+                                            <div>
+                                                <p style="font-size:40px;">Fill this form</p>
+                                            </div>
+
+                                            <table class="col-11">
+                                                <th>
+                                                <br>
+                                                    <li>
+                                                        <label for="inputState" class="form-label">Gender</label><br>
+                                                        <select id="Gender" name="Gender" step="any" class="form-select"
+                                                            required>
+                                                            <option value='1'>Male</option>
+                                                            <option value='0'>Female</option>
+                                                        </select>
+
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput" class="form-label">Age</label><br>
+                                                        <input type="text" class="form-select" id="Age" name="Age"
+                                                            step="any" required="required" placeholder="Enter your age">
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput"
+                                                            class="form-label">Hypertension</label><br>
+                                                        <select id="Hypertension" name="Hypertension" step="any"
+                                                            class="form-select" required>
+                                                            <option>High</option>
+                                                            <option>Low</option>
+                                                        </select>
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput" class="form-label"> Any
+                                                            Heart_disease
+                                                            history</label><br>
+                                                        <select id="Heart_disease" name="Heart_disease" step="any"
+                                                            class="form-select" required>
+                                                            <option value='1'>Yes</option>
+                                                            <option value='0'>No</option>
+                                                        </select>
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput"
+                                                            class="form-label">Married</label><br>
+                                                        <select id="Married" name="Married" step="any"
+                                                            class="form-select" required>
+                                                            <option value='1'>Yes</option>
+                                                            <option value='0'>No</option>
+                                                        </select>
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput"
+                                                            class="form-label">Work_type</label><br>
+                                                        <select id="Work_type" name="Work_type" step="any"
+                                                            class="form-select" required>
+                                                            <option>Private</option>
+                                                            <option>Government</option>
+                                                            <option>Self emplyed</option>
+                                                            <option>children</option>
+                                                        </select>
+                                                    </li>
+                                                </th>
+                                                <th>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput"
+                                                            class="form-label" style="margin-top:15px">Residence_type</label><br>
+                                                        <select id="Residence_type" name="Residence_type" step="any"
+                                                            class="form-select" required>
+                                                            <option>rural</option>
+                                                            <option>Urban</option>
+                                                        </select>
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput"
+                                                            class="form-label">Avg_glucose_level</label><br>
+                                                        <input type="text" class="form-select" id="Avg_glucose_level"
+                                                            name="Avg_glucose_level" step="any" required="required"
+                                                            placeholder="Enter your average Glucose level">
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="inputState" class="form-label">Body Mass
+                                                            Index</label><br>
+                                                        <input type="text" class="form-select" id="bmi" name="bmi"
+                                                            step="any" required="required"
+                                                            placeholder="Enter Body Mass">
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput"
+                                                            class="form-label">Smoking_status</label><br>
+                                                        <select id="Smoking_status" name="Smoking_status" step="any"
+                                                            class="form-select" required>
+                                                            <option value='0'>Rarely</option>
+                                                            <option value='1'>Formerly</option>
+                                                            <option value='2'>never</option>
+                                                        </select>
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <label for="floatingInput"
+                                                            class="form-label">Choose_model</label><br>
+                                                        <select id="Model" name="Model" step="any" class="form-select"
+                                                            required>
+                                                            <option value="Decision_Tree">Decision_Tree</option>
+                                                            <option value="KNN">KNN</option>
+                                                            <option value="SVM">SVM</option>
+                                                            <option value="Random_Forest">Random_Forest</option>
+                                                            <option value="Naive_Bayes">Naive_Bayes</option>
+                                                        </select>
+                                                    </li>
+                                                    <br>
+                                                    <li><label class="form-label">Click here</label><br>
+                                                        <button type="submit" value="predict" name="predict"
+                                                            class="col-12" style="border-radius:10px;border-color: white; background-color: rgb(150, 2, 2); color: white;">predict</button>
+                                                    </li>
+                                                </th>
+                                        </form>
+                                    </th>
+                                </tr>
+                            </table>
+                            
+                            <div >
+                                <p style="color:rgb(4, 4, 4);">
+                                    {{prediction_text}}
+                                    {{extra_text}}
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+
+
+                <br><br><br><br><br><br><br>
+                </th>
+                </tr>
+
+                </table>
+            </div>
+
+        </div>
+        <br>
+
+    </div>
+    
+    
+    
+    <div style="width:1400px; font-style: justify; margin-top:100px; margin-left:50px;">
+
+        <hr>
+        <h2 style="text-align:center; font-size:40px; ">When to see a doctor</h2>
+        
+        
+        <p style="text-align:left; padding: 30px; font-family: 'Times New Roman', Times, serif;">
+            If you or someone you're with may be having a stroke, pay particular attention to the time the symptoms
+            began. Some treatment options are most effective when given soon after a stroke begins.<br><br>
+
+            Signs and symptoms of stroke include:  <br><br>
+
+            <b>Trouble speaking and understanding what others are saying.</b><br> You may experience confusion, slur words or have
+            difficulty understanding speech.<br><br>
+            <b>Paralysis or numbness of the face, arm or leg.</b><br> You may develop sudden numbness, weakness or paralysis in the
+            face, arm or leg. This often affects just one side of the body. Try to raise both your arms over your head
+            at the same time. If one arm begins to fall, you may be having a stroke. Also, one side of your mouth may
+            droop when you try to smile.<br><br>
+            <b>Problems seeing in one or both eyes. </b><br>You may suddenly have blurred or blackened vision in one or both eyes,
+            or you may see double.<br><br>
+            <b>Headache.</b><br> A sudden, severe headache, which may be accompanied by vomiting, dizziness or altered
+            consciousness, may indicate that you're having a stroke.<br><br>
+            <b>Trouble walking.</b><br> You may stumble or lose your balance. You may also have sudden dizziness or a loss of
+            coordination.<br><br>
+        </p>
+    </div>
+    
+
+
+    <div class="col-foot-12">
+        
+        <br><br><br><br><br>
+        
+        <!-- change later-->
+        <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
